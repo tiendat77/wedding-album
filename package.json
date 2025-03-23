@@ -1,0 +1,54 @@
+{
+  "name": "wedding-album",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "prepare": "husky",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,md}\"",
+    "lint-staged": "lint-staged"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.0.4",
+    "@react-three/fiber": "^9.1.0",
+    "@reduxjs/toolkit": "^2.6.1",
+    "@tailwindcss/vite": "^4.0.15",
+    "@types/three": "^0.174.0",
+    "maath": "^0.10.8",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-redux": "^9.2.0",
+    "tailwindcss": "^4.0.15",
+    "three": "^0.174.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "@eslint/css": "^0.5.0",
+    "@eslint/js": "^9.23.0",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react-swc": "^3.8.0",
+    "daisyui": "^5.0.9",
+    "eslint": "^9.23.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "husky": "^9.1.7",
+    "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.27.0",
+    "vite": "^6.2.0"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": "eslint --fix ",
+    "*.{js,ts,tsx,css,md,html,json}": "prettier --cache --write"
+  }
+}

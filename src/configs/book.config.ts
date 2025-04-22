@@ -1,7 +1,7 @@
-export const PAGE_WIDTH = 2.02;
+export const PAGE_WIDTH = 1.01;
 export const PAGE_HEIGHT = 1.01;
 export const PAGE_DEPTH = 0.003;
-export const PAGE_SEGMENTS = 30;
+export const PAGE_SEGMENTS = 35;
 export const SEGMENT_WIDTH = PAGE_WIDTH / PAGE_SEGMENTS;
 
 export const EASING_FACTOR = 0.5; // Controls the speed of the easing
